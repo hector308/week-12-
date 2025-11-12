@@ -13,23 +13,47 @@
 a = 3
 b = 4
 
-print(a == b)   # False
-print(a != b)   # True
-print(a > b)    # False
-print(a < b)    # True
-print(a >= b)   # False
-print(a <= b)   # True
+print(a == b) #Checks for equality  # False
+print(a != b) #Checks if is not equal  # True
+print(a > b)  #Checks for greater than   # False
+print(a < b)  #Checks for less than  # True
+print(a >= b) #Checks for greater than or equal to  # False
+print(a <= b) #Checks for less than or equal to  # True
 
 
 #predict the output of the following comparisons:
-10 > 5
-7 == 2 * 3 + 1
-8 != 8
-4 <= 2 + 2
-
+10 > 5  #True
+7 == 2 * 3 + 1 #True
+8 != 8 #False
+4 <= 2 + 2 #True
+print("!")
 # Write 3 examples that result in True and 3 that result in False.
-
+print(30==30)
+print (4+7>=2+5)
+print(12!=9)
+print(6==2)
+print (4!=4)
+print (9+5<=2+4)
 # Create a simple grade-checking condition:
 
 # practice problem :
 # where a student must check if their score is greater than or equal to 60 to pass a test.# The password must be at least 8 characters long and contain at least one digit.password = "mypassword1"
+score=int(input("What is your score?"))
+password=input("What is your password?")
+print(password)
+if score>=60:
+    print ("You passed!")
+else:
+    print("You failed!")
+
+grade=int(input("What is your grade"))
+if grade>=90 and grade<=100:
+    print("You got an A")
+elif grade>=80 and grade<=89:
+    print("You got a B")
+elif grade>=70 and grade<=79:
+    print("You got a C")
+elif grade>=60 and grade<=69:
+    print ("You got a D")
+else:
+    print("You got an F, see me in ACLAB")
