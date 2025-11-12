@@ -39,8 +39,7 @@ print (9+5<=2+4)
 # practice problem :
 # where a student must check if their score is greater than or equal to 60 to pass a test.# The password must be at least 8 characters long and contain at least one digit.password = "mypassword1"
 score=int(input("What is your score?"))
-password=input("What is your password?")
-print(password)
+
 if score>=60:
     print ("You passed!")
 else:
@@ -57,3 +56,10 @@ elif grade>=60 and grade<=69:
     print ("You got a D")
 else:
     print("You got an F, see me in ACLAB")
+
+password=input("What is your password?")
+print(password)
+if len(password) >= 8 and any(char.isdigit() for char in password):
+    print("Password is valid.")
+else:
+    print("Password is not valid, it should be at least 8 characters long and contain at least one digit.")
