@@ -3,34 +3,74 @@
 
 # Topics Covered:
 # Creating lists, indexing, slicing, appending, popping, sorting, reversing.
-
+#lists are part of the collections family in Python
+#Creating a list
+list1 = [1,2,3,4,5]
+print(list1)
+print (len(list1))
+print(list1[0])
+print (list1[1:4])
+print(list1[:-1])
+#reverse list
+print(list1[::-1])
+#modify
+list1.append(6) #adds 6 to the end of the list
+print(list1)
+list1.extend([7,8]) #shorcut for adding more than one
+print(list1)
+list1.pop() #removes the last item
+print(list1)
+list1.pop(2) #sorts in ascending order
+print(list1) 
+list1.reverse() #reverses list
+print(list1)
+list1.reverse()
+list1.remove(4) #removes by index
+print(list1)
+list1.remove(6)
+print(list1)
+print("!")
+#add numbers to 50
+list2= list(range(12,120))
+list1.append(list2)
+print(list1)
+list3=list(range(120,620))
+list1.append(list3)
+print(list1)
+print(list1[::3])
+#.append() adds one item to the end of the list
+#.extend() adds multiple items to the end of the list
+#.pop() removes abd returns an item to a given index (default is the last item)
+#.remove() removes the fist occurance of a value
+#.sort() sorts the list in ascending order
+#.reverse() reverses the order of the list
 # Examples:
 
-my_list = ['apple', 'banana', 'cherry']
-print(my_list[0])         # apple
-print(my_list[1:])        # ['banana', 'cherry']
+# my_list = ['apple', 'banana', 'cherry']
+# print(my_list[0])         # apple
+# print(my_list[1:])        # ['banana', 'cherry']
 
-my_list.append('grape')
-print(my_list)
+# my_list.append('grape')
+# print(my_list)
 
-my_list.pop(1)
-print(my_list)
+# my_list.pop(1)
+# print(my_list)
 
-numbers = [3, 1, 4, 2]
-numbers.sort()
-print(numbers)
+# numbers = [3, 1, 4, 2]
+# numbers.sort()
+# print(numbers)
 
 
-# Practice Problems:
+# # Practice Problems:
 
-# Create a list with 5 of your favorite foods.
+# # Create a list with 5 of your favorite foods.
 
-# Print the second and last item.
+# # Print the second and last item.
 
-# Add a new item using .append().
+# # Add a new item using .append().
 
-# Remove the first item using .pop(0).
+# # Remove the first item using .pop(0).
 
-# Reverse your list using .reverse().
+# # Reverse your list using .reverse().
 
-# Create a list of 3 lists (matrix), and access the middle element.
+# # Create a list of 3 lists (matrix), and access the middle element.
